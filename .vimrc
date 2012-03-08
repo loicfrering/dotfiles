@@ -39,3 +39,6 @@ map <C-l> <C-w>l
 
 " Avoid 'escaping' from home row
 imap jj <Esc>
+
+" Open NERDTree if no file specified
+autocmd vimenter * if !argc() | NERDTree | endif
