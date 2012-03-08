@@ -28,3 +28,18 @@
 [submodule ".vim/bundle/buffergator"]
 	path = .vim/bundle/buffergator
 	url = git://github.com/jeetsukumaran/vim-buffergator.git
+[submodule ".vim/bundle/javascript"]
+	path = .vim/bundle/javascript
+	url = git://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/markdown"]
+	path = .vim/bundle/markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule ".vim/bundle/coffee-script"]
+	path = .vim/bundle/coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule ".vim/bundle/git"]
+	path = .vim/bundle/git
+	url = git://github.com/tpope/vim-git.git
+[submodule ".vim/bundle/ruby"]
+	path = .vim/bundle/ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
