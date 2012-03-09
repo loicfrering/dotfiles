@@ -26,10 +26,14 @@ let g:solarized_termcolors=256
 colorscheme solarized
 set cursorline
 
+" Whitespace stuff
+set nowrap
+set expandtab
+
 " 4 spaces tabs
 set tabstop=4
-set shiftwidth=4
 set softtabstop=4
+set shiftwidth=4
 
 " Move easily between windows
 map <C-h> <C-w>h
