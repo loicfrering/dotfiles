@@ -1,5 +1,6 @@
 call pathogen#infect()
 set nocompatible
+set laststatus=2
 set number
 set ruler
 syntax on
@@ -46,3 +47,6 @@ imap jj <Esc>
 
 " Open NERDTree if no file specified
 autocmd vimenter * if !argc() | NERDTree | endif
+
+" Unicode Powerline symbols
+let g:Powerline_symbols = 'unicode'
