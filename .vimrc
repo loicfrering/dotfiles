@@ -11,6 +11,10 @@ filetype plugin indent on
 " Set encoding
 set encoding=utf-8
 
+" Backup and swap files
+set backupdir=~/.vim/backup//
+set directory=~/.vim/temp//
+
 " Searching
 set hlsearch
 set incsearch
