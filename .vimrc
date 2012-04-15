@@ -52,5 +52,5 @@ imap jj <Esc>
 " Open NERDTree if no file specified
 autocmd vimenter * if !argc() | NERDTree | endif
 
-" Unicode Powerline symbols
-let g:Powerline_symbols = 'unicode'
+" Powerline
+let g:Powerline_symbols = 'compatible'
