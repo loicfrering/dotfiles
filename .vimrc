@@ -34,6 +34,9 @@ set cursorline
 " Whitespace stuff
 set nowrap
 set expandtab
+set backspace=indent,eol,start
+set list
+set listchars=tab:\ \ ,trail:·,nbsp:_,extends:>,precedes:<
 
 " 4 spaces tabs
 set tabstop=4
