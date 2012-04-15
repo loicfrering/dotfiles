@@ -25,8 +25,8 @@ set smartcase
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
-" Default colorscheme to molokai
-set background=dark
+" Default colorscheme to solarized
+set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 set cursorline
