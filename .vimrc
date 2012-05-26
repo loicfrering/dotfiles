@@ -57,3 +57,6 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 " Powerline
 let g:Powerline_symbols = 'compatible'
+
+" CtrlP, don’t manage working directory
+let g:ctrlp_working_path_mode = 0
