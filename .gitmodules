@@ -52,3 +52,9 @@
 [submodule ".vim/bundle/twig"]
 	path = .vim/bundle/twig
 	url = https://github.com/beyondwords/vim-twig.git
+[submodule ".vim/bundle/clam"]
+	path = .vim/bundle/clam
+	url = git://github.com/sjl/clam.vim.git
+[submodule ".vim/bundle/less"]
+	path = .vim/bundle/less
+	url = git://github.com/groenewege/vim-less.git
