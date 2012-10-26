@@ -58,5 +58,7 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " Powerline
 let g:Powerline_symbols = 'compatible'
 
-" CtrlP, don’t manage working directory
-let g:ctrlp_working_path_mode = 0
+" CtrlP
+let g:ctrlp_working_path_mode = 0 " don’t manage working directory
+let g:ctrlp_switch_buffer = 'et' "don't jump if the buffer is not in the current tab
+:
