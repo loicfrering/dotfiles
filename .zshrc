@@ -45,6 +45,7 @@ fi
 
 # Aliases
 alias ll="ls -lh --color"
+alias ack="ack-grep"
 
 # VIM as editor
 export EDITOR=vim
