@@ -53,3 +53,7 @@ export EDITOR=vim
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Projects navigation
+p(){cd ~/Projets/$1;}
+compctl -W ~/Projets -M 'm:{a-z}={A-Z}' -/ p
