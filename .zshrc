@@ -43,17 +43,25 @@ if [ $TERM != "screen-256color" ]; then
     export TERM=xterm-256color
 fi
 
-# Aliases
+# prevent autocorrect
+alias tmux="nocorrect tmux"
+
+# general aliases
 alias ll="ls -lh --color"
 alias ack="ack-grep"
 
-# VIM as editor
+# tmux aliases
+alias tn="tmux new -s"
+alias ta="tmux attach -t"
+alias tl="tmux list-sessions"
+
+# vim as editor
 export EDITOR=vim
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Projects navigation
+# projects navigation
 p(){cd ~/Projets/$1;}
 compctl -W ~/Projets -M 'm:{a-z}={A-Z}' -/ p
