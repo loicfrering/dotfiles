@@ -1,0 +1,8 @@
+[user]
+	name = Loïc Frering
+	email = loic.frering@gmail.com
+[color]
+	ui = true
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
