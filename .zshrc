@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Path
-export PATH=$PATH:/opt/node/bin
+export PATH=$PATH:/opt/node/bin:./node_modules/.bin
 
 # 256 colors
 if [ $TERM != "screen-256color" ]; then
