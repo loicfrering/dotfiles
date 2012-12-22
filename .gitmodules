@@ -90,3 +90,7 @@
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
 	ignore = untracked
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+	ignore = untracked
