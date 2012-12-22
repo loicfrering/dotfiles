@@ -43,6 +43,10 @@ if [ $TERM != "screen-256color" ]; then
     export TERM=xterm-256color
 fi
 
+# keychain
+# public keys must be loaded manually with keychain command
+source ~/.keychain/$HOST-sh
+
 # prevent autocorrect
 alias tmux="nocorrect tmux"
 
