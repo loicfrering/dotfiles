@@ -59,6 +59,11 @@ alias tn="tmux new -s"
 alias ta="tmux attach -t"
 alias tl="tmux list-sessions"
 
+# git aliases - additions to oh-my-zsh's git plugin
+alias gst="git st"
+alias glg="git lola"
+alias gf="git fetch"
+
 # vim as editor
 export EDITOR=vim
 
