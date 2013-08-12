@@ -103,3 +103,6 @@
 [submodule ".vim/bundle/addon-mw-utils"]
 	path = .vim/bundle/addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule ".vim/bundle/tomorrow"]
+	path = .vim/bundle/tomorrow
+	url = git://github.com/chriskempson/vim-tomorrow-theme.git
