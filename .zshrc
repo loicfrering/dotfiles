@@ -70,8 +70,10 @@ alias gf="git fetch"
 export EDITOR=vim
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv ]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
 
 # projects navigation
 p(){cd ~/Projets/$1;}
