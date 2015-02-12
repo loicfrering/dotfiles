@@ -45,7 +45,9 @@ fi
 
 # keychain
 # public keys must be loaded manually with keychain command
-source ~/.keychain/$HOST-sh
+if [ -f ~/.keychain/$HOST-sh ]; then
+    source ~/.keychain/$HOST-sh
+fi
 
 # prevent autocorrect
 alias tmux="nocorrect tmux"
