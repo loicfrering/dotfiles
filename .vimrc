@@ -37,6 +37,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'garbas/vim-snipmate'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'derekwyatt/vim-scala'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
