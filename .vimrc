@@ -53,6 +53,10 @@ set directory=~/.vim/temp//
 " More accessible leader key
 let mapleader = ','
 
+" Markdown shortcuts
+nnoremap <Leader>= yypVr=o<Esc>
+nnoremap <Leader>- yypVr-o<Esc>
+
 " Searching
 set hlsearch
 set incsearch
