@@ -62,6 +62,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+nnoremap <space> :nohlsearch<cr>
 
 " Tab completion
 set wildmode=list:longest,list:full
