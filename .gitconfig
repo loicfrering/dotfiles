@@ -5,8 +5,8 @@
 	ui          = true
 [alias]
 	st          = status -sb
-	lol         = log --graph --decorate --pretty=oneline --abbrev-commit
-	lola        = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lol         = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit
+	lola        = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --all
 [help]
 	autocorrect = 1
 [push]
