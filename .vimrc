@@ -37,6 +37,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'garbas/vim-snipmate'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'rust-lang/rust.vim'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'christoomey/vim-tmux-navigator'
 
