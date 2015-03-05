@@ -50,6 +50,9 @@ set encoding=utf-8
 set backupdir=~/.vim/backup//
 set directory=~/.vim/temp//
 
+" More accessible leader key
+let mapleader = ','
+
 " Searching
 set hlsearch
 set incsearch
