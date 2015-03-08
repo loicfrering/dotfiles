@@ -31,17 +31,17 @@ ZSH_THEME="steeef"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git vagrant symfony2 nyan zsh-syntax-highlighting)
 
+# Configure TERM with 256 colors before sourcing $ZSH/oh-my-zsh.sh
+if [ $TERM != "screen-256color" ]; then
+    export TERM=xterm-256color
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # Path
 export PATH=$PATH:/opt/node/bin:./node_modules/.bin
-
-# 256 colors
-if [ $TERM != "screen-256color" ]; then
-    export TERM=xterm-256color
-fi
 
 # keychain
 # public keys must be loaded manually with keychain command
