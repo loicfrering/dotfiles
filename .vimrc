@@ -41,6 +41,7 @@ Bundle 'rust-lang/rust.vim'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'benmills/vimux'
+Bundle 'mileszs/ack.vim'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
