@@ -43,6 +43,7 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'benmills/vimux'
 Bundle 'mileszs/ack.vim'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'terryma/vim-multiple-cursors'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
