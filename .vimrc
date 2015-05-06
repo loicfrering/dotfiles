@@ -42,6 +42,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'benmills/vimux'
 Bundle 'mileszs/ack.vim'
+Bundle 'airblade/vim-gitgutter'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
@@ -75,6 +76,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
+highlight clear SignColumn
 set cursorline
 
 " Whitespace stuff
