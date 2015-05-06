@@ -40,6 +40,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'rust-lang/rust.vim'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'benmills/vimux'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
@@ -102,3 +103,12 @@ let g:Powerline_symbols = 'compatible'
 " CtrlP
 let g:ctrlp_working_path_mode = 0 " don’t manage working directory
 let g:ctrlp_switch_buffer = 'et' "don't jump if the buffer is not in the current tab
+
+" Vimux
+map <Leader>vt :call VimuxRunCommand("clear; make test")<CR>
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vi :VimuxInspectRunner<CR>
+map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vx :VimuxInterruptRunner<CR>
+map <Leader>vz :call VimuxZoomRunner()<CR>
