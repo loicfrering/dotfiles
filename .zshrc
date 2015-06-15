@@ -65,6 +65,7 @@ alias tl="tmux list-sessions"
 alias gst="git st"
 alias glg="git lola"
 alias gf="git fetch"
+alias gs="git show"
 
 # vim as editor
 export EDITOR=vim
