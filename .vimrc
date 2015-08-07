@@ -45,6 +45,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'tpope/vim-endwise'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
