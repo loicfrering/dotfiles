@@ -29,7 +29,7 @@ ZSH_THEME="steeef"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vagrant symfony2 nyan zsh-syntax-highlighting)
+plugins=(git vagrant docker symfony2 nyan zsh-syntax-highlighting)
 
 # Configure TERM with 256 colors before sourcing $ZSH/oh-my-zsh.sh
 if [ $TERM != "screen-256color" ]; then
