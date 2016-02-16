@@ -108,8 +108,9 @@ imap jj <Esc>
 let g:Powerline_symbols = 'compatible'
 
 " CtrlP
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ctrlp_working_path_mode = 0 " don’t manage working directory
-let g:ctrlp_switch_buffer = 'et' "don't jump if the buffer is not in the current tab
+let g:ctrlp_switch_buffer = 'et' " don't jump if the buffer is not in the current tab
 
 " Vimux
 map <Leader>vt :call VimuxRunCommand("clear; make test")<CR>
