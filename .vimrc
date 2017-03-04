@@ -48,6 +48,7 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'tpope/vim-endwise'
 Bundle 'mxw/vim-jsx'
 Bundle 'keith/swift.vim'
+Bundle 'cespare/vim-toml'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
