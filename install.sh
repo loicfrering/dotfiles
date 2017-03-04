@@ -21,7 +21,7 @@ fi
 chsh -s $(which zsh)
 
 # Link Zsh, Git, Vim and tmux configurations
-files=(".zshrc" ".gitconfig" ".vim" ".vimrc" ".tmux.conf")
+files=(".zshrc" ".gitconfig" ".vim" ".vimrc" ".tmux.conf" ".bin")
 for file in "${files[@]}"; do
   if [[ -f "$HOME/$file" || -d "$HOME/$file" ]]; then
     if [ "$1" = "-f" ]; then
