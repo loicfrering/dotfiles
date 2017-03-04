@@ -44,7 +44,7 @@ source $ZSH/oh-my-zsh.sh
 for d in /opt/*/bin; do
     PATH="$PATH:$d"
 done
-export PATH=$PATH:./bin:./node_modules/.bin
+export PATH=./bin:./node_modules/.bin:$HOME/.bin:$PATH
 
 # keychain
 # public keys must be loaded manually with keychain command
