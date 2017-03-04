@@ -41,7 +41,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Path
-for d in /opt/*/bin; do
+for d in /opt/*/bin(.N); do
     PATH="$PATH:$d"
 done
 export PATH=./bin:./node_modules/.bin:$HOME/.bin:$PATH
