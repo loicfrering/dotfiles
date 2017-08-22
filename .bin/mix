@@ -27,6 +27,6 @@ docker run \
   -w /work \
   -e "MIX_HOME=$MIX_VOLUME_PATH" \
   -e "HEX_HOME=$HEX_VOLUME_PATH" \
-  -p 80:4000 \
+  -p 4660:4000 \
   $IMAGE \
   mix $@
