@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+export UID GID=$GID
+docker-compose --file /home/loic/.bin/go-docker-compose.yml run --service-ports golang $@

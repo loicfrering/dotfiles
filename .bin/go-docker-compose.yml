@@ -1,0 +1,15 @@
+version: '2'
+services:
+  golang:
+    image: golang:1.8-stretch
+    user: $UID:$GID
+    volumes:
+      - $PWD:/work
+      - go-data:/go
+    working_dir: /work
+    ports:
+      - "4660:8080"
+    entrypoint: go
+
+volumes:
+  go-data:
