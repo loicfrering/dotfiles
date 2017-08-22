@@ -3,4 +3,4 @@
 set -e
 
 export UID GID=$GID
-docker-compose --file /home/loic/.bin/go-docker-compose.yml run --service-ports golang $@
+docker-compose --file $HOME/.bin/go-docker-compose.yml run --service-ports golang $@
