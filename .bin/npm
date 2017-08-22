@@ -2,7 +2,7 @@
 
 set -e
 
-IMAGE=elixir:1.4
+IMAGE=node:8
 NODE_VOLUME_NAME=node-data
 NODE_VOLUME_PATH=/node
 
