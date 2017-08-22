@@ -22,6 +22,5 @@ docker run \
   -e "PATH=$PATH:$NODE_VOLUME_PATH/bin" \
   -p 4000:4000 \
   -p 4660:4660 \
-  -p 80:8080 \
   node \
   npm $@
