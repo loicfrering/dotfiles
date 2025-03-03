@@ -10,6 +10,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Bundles
+Bundle 'morhetz/gruvbox'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/molokai'
 Bundle 'tpope/vim-fugitive'
@@ -49,6 +50,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'mxw/vim-jsx'
 Bundle 'keith/swift.vim'
 Bundle 'cespare/vim-toml'
+Bundle 'leafgarland/typescript-vim'
+Bundle 'posva/vim-vue'
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
@@ -122,3 +125,8 @@ map <Leader>vi :VimuxInspectRunner<CR>
 map <Leader>vq :VimuxCloseRunner<CR>
 map <Leader>vx :VimuxInterruptRunner<CR>
 map <Leader>vz :call VimuxZoomRunner()<CR>
+
+" Syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'passive_filetypes': ['swift'] }

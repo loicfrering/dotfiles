@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -e
+
+IMAGE=azuresdk/azure-cli-python
+AZURE_VOLUME_NAME=azure-data
+AZURE_VOLUME_PATH=/.azure
+
+if ! docker volume inspect $AZURE_VOLUME_NAME > /dev/null 2>&1; then
+  docker volume create $AZURE_VOLUME_NAME
+  docker run --rm -v $AZURE_VOLUME_NAME:$AZURE_VOLUME_PATH --name init-$AZURE_VOLUME_NAME $IMAGE chmod 777 $AZURE_VOLUME_PATH
+fi
+
+docker run \
+  -it --rm \
+  -u $(id -u):$(id -g) \
+  -v azure-data:$AZURE_VOLUME_PATH \
+  -v $PWD:/work \
+  -w /work \
+  $IMAGE \
+  az $@

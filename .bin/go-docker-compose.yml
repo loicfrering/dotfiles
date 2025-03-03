@@ -1,7 +1,7 @@
 version: '2'
 services:
   golang:
-    image: golang:1.8-stretch
+    image: golang:latest
     user: $UID:$GID
     volumes:
       - $PWD:/work
@@ -10,6 +10,9 @@ services:
     ports:
       - "4660:8080"
     entrypoint: go
+    environment:
+      - GOCACHE=/go
+      - GOPATH=/work
 
 volumes:
   go-data:

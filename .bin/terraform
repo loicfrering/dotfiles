@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+IMAGE=node:8
+NODE_VOLUME_NAME=node-data
+NODE_VOLUME_PATH=/node
+
+docker run \
+  -it --rm \
+  -u $(id -u):$(id -g) \
+  -v $PWD:/work \
+  -e GOOGLE_CREDENTIALS="$GOOGLE_CREDENTIALS" \
+  -w /work \
+  hashicorp/terraform:light \
+  $@

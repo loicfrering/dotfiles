@@ -2,7 +2,7 @@
 
 set -e
 
-IMAGE=elixir:1.4
+IMAGE=elixir:1.14-alpine
 MIX_VOLUME_NAME=mix-data
 MIX_VOLUME_PATH=/mix
 HEX_VOLUME_NAME=hex-data
@@ -30,3 +30,4 @@ docker run \
   -p 4660:4000 \
   $IMAGE \
   mix $@
+  #bash

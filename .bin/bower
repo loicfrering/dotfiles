@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+set -e
+
+IMAGE=node:8
+NODE_VOLUME_NAME=node-data
+NODE_VOLUME_PATH=/node
+
+if ! docker volume inspect $NODE_VOLUME_NAME > /dev/null 2>&1; then
+  docker volume create $NODE_VOLUME_NAME
+  docker run --rm -v $NODE_VOLUME_NAME:$NODE_VOLUME_PATH --name init-$NODE_VOLUME_NAME $IMAGE chmod 777 $NODE_VOLUME_PATH
+fi
+
+docker run \
+  -it --rm \
+  -u $(id -u):$(id -g) \
+  -v node-data:$NODE_VOLUME_PATH \
+  -v $PWD:/work \
+  -w /work \
+  -e "NPM_CONFIG_PREFIX=$NODE_VOLUME_PATH" \
+  -e "NPM_CONFIG_CACHE=$NODE_VOLUME_PATH/npm-cache" \
+  -e "PATH=$PATH:$NODE_VOLUME_PATH/bin" \
+  -p 3000:3000 \
+  -p 4000:4000 \
+  -p 4660:4660 \
+  node \
+  bower $@

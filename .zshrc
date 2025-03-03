@@ -29,7 +29,7 @@ ZSH_THEME="steeef"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vagrant docker symfony2 nyan zsh-syntax-highlighting)
+plugins=(git vagrant docker symfony2 zsh-syntax-highlighting kubectl terraform)
 
 # Configure TERM with 256 colors before sourcing $ZSH/oh-my-zsh.sh
 if [ $TERM != "screen-256color" ]; then
@@ -44,7 +44,7 @@ source $ZSH/oh-my-zsh.sh
 for d in /opt/*/bin(.N); do
     PATH="$PATH:$d"
 done
-export PATH=./bin:./node_modules/.bin:$HOME/.bin:$PATH
+export PATH=./bin:./node_modules/.bin:$HOME/.bin:$HOME/.cargo/bin:$PATH
 
 # keychain
 # public keys must be loaded manually with keychain command
@@ -52,14 +52,9 @@ if [ -f ~/.keychain/$HOST-sh ]; then
     source ~/.keychain/$HOST-sh
 fi
 
-# prevent autocorrect
-alias tmux="nocorrect tmux"
-
-# general aliases
-alias ll="ls -lh --color"
-alias ack="ack-grep"
 
 # tmux aliases
+alias tmux="nocorrect tmux"
 alias tn="tmux new -s"
 alias ta="tmux attach -t"
 alias tl="tmux list-sessions"
@@ -70,7 +65,20 @@ alias glg="git lola"
 alias gf="git fetch"
 alias gs="git show"
 
+# docker aliases
+alias d="docker"
+alias dr="docker run -it --rm"
+alias db="docker build"
+alias dp="docker ps"
+alias di="docker images"
+alias dpu="docker push"
+alias dcu="docker-compose up"
+
+# kubernetes aliases
+alias kns="kubectl config set-context $(kubectl config current-context) --namespace"
+
 # vim as editor
+alias vi=nvim
 export EDITOR=vim
 
 # rbenv
@@ -82,3 +90,14 @@ fi
 # projects navigation
 p(){cd ~/Projets/$1;}
 compctl -W ~/Projets -M 'm:{a-z}={A-Z}' -/ p
+
+# general aliases
+alias ll="ls -lh --color"
+alias cat=bat
+alias ping='prettyping --nolegend'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias top=htop
+alias find=fd
+alias help=tldr
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

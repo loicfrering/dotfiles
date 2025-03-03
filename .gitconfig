@@ -1,15 +1,30 @@
 [user]
-	name        = Loïc Frering
-	email       = loic.frering@gmail.com
+	name  = Loïc Frering
+	email = loic.frering@gmail.com
 [color]
-	ui          = true
+	ui = true
 [alias]
-	st          = status -sb
-	lol         = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit
-	lola        = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --all
+	st   = status -sb
+	lol  = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit
+	lola = log --graph --pretty=format:'%C(auto)%h -%d %s %Cgreen(%cr) %C(bold cyan)<%an>%Creset' --abbrev-commit --all
 [help]
 	autocorrect = 1
 [push]
 	default = simple
 [credential]
 	helper = cache --timeout=3600
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
+[color "diff-highlight"]
+	oldNormal    = red
+	oldHighlight = red 52
+	newNormal    = green
+	newHighlight = green 22
+[color "diff"]
+	meta       = yellow
+	frag       = magenta bold
+	commit     = yellow bold
+	old        = red
+	new        = green
+	whitespace = red reverse
